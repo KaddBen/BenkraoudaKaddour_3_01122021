@@ -1,0 +1,28 @@
+@media screen and (min-width: 1280px){
+
+    .html,body {
+        padding: 0;
+    margin: 0;
+    }
+
+    * {
+        max-width: 1280px;
+        margin: auto;
+            }
+
+    .footer {
+        background-color: rgb(105, 105, 105);
+        width: 100%;
+        height: fit-content;
+        align-items: flex-start;
+        padding: 6% 0%;
+        gap: 2%;
+    }
+    .menu_card {
+        background-color: white;
+        width: 30%;
+        height: 4rem;
+        border-radius: 20px;  
+    
+    }
+}
