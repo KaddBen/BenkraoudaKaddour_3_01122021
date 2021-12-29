@@ -1,0 +1,145 @@
+@import "../sass/variables";
+@media screen and (min-width: 1024px){
+
+    .html,body {
+        padding: 0;
+    margin: 0;
+    }
+
+    *:not(.footer_container) {
+        max-width: 1280px;
+        margin: auto;
+            }
+
+    .footer {
+        position: relative;
+        background-color: $dark-grey;
+        width: 100% !important;
+        height: fit-content;
+        align-items: flex-start;
+        padding: 6% 0%;
+        gap: 2%;
+        flex-direction: row !important;
+    }
+    .menu_card {
+        background-color: white;
+        width: 30%;
+        height: 4rem;
+        border-radius: 20px;  
+    
+    }
+    .flex {
+align-items: flex-start;
+        flex-direction: row;
+    }
+    .reservation {
+        width: 40%;
+margin-top: 13.5rem;
+        flex-direction: column;
+        background-color: white;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        margin: unset;
+        padding-top: 3.5rem;
+        
+    }
+
+    .location {
+      width: 20%;
+        background-color: $white;
+align-items: flex-start !important;
+justify-content: flex-start !important;
+margin: unset;
+position: relative;
+    }
+
+    .fas.fa-map-marker-alt {
+
+        position: absolute;
+        left: 10%;
+    }
+
+    .brd_bottom {
+
+        border-bottom: 0.2rem solid $dark-grey;
+        width: 50%;
+    }
+    .absolute {
+   position: absolute;
+   top: 8rem;
+
+    }
+
+    .card {
+        height: 15rem !important;
+    }
+.new {
+width: 5.5rem;
+height: 1.5rem;
+   right: 0.5rem; 
+}
+
+
+    .img_container {
+        position: relative;
+        background-position-y: 0rem;
+        background-size: 112% ;
+
+    }
+
+    .img_gout {
+        background-image: url(/images/restaurants/gout.jpg);
+        @include img_flex;
+       }
+       
+       
+       .img_française {
+        background-image: url(/images/restaurants/française.jpg);
+        @include img_flex;
+       }
+       
+       .img_delice {
+        background-image: url(/images/restaurants/delice.jpg);
+        @include img_flex;
+       }
+      .ellipsis {
+position: absolute;
+        text-overflow: unset;
+overflow: unset;
+top: 0.5rem;
+left: 1rem;
+      } 
+
+      .fs_footer_icon {
+        margin: unset;
+        padding-left: 1rem;
+      }
+
+      .white {
+          margin: unset;
+      }
+
+      .card_container {
+
+        position: relative;
+      }
+
+      .container_card {
+
+margin: unset !important;
+margin: none;
+      }
+
+     
+      
+      .logo_container {
+      margin: none !important;
+      margin: unset !important;
+      max-width: unset !important;
+      }
+      
+      .footer_container {
+      width: 100%;
+      margin: unset !important;
+      }
+}

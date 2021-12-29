@@ -1,28 +1,182 @@
-@media screen and (min-width: 1280px){
-
-    .html,body {
-        padding: 0;
+@charset "UTF-8";
+@media screen and (min-width: 1024px) {
+  .html, body {
+    padding: 0;
     margin: 0;
-    }
-
-    * {
-        max-width: 1280px;
-        margin: auto;
-            }
-
-    .footer {
-        background-color: rgb(105, 105, 105);
-        width: 100%;
-        height: fit-content;
-        align-items: flex-start;
-        padding: 6% 0%;
-        gap: 2%;
-    }
-    .menu_card {
-        background-color: white;
-        width: 30%;
-        height: 4rem;
-        border-radius: 20px;  
-    
-    }
+  }
+  *:not(.footer_container) {
+    max-width: 1280px;
+    margin: auto;
+  }
+  .footer {
+    position: relative;
+    background-color: #3b3b3b;
+    width: 100% !important;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 6% 0%;
+    gap: 2%;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .menu_card {
+    background-color: white;
+    width: 30%;
+    height: 4rem;
+    border-radius: 20px;
+  }
+  .flex {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .reservation {
+    width: 40%;
+    margin-top: 13.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    margin: unset;
+    padding-top: 3.5rem;
+  }
+  .location {
+    width: 20%;
+    background-color: white;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    margin: unset;
+    position: relative;
+  }
+  .fas.fa-map-marker-alt {
+    position: absolute;
+    left: 10%;
+  }
+  .brd_bottom {
+    border-bottom: 0.2rem solid #3b3b3b;
+    width: 50%;
+  }
+  .absolute {
+    position: absolute;
+    top: 8rem;
+  }
+  .card {
+    height: 15rem !important;
+  }
+  .new {
+    width: 5.5rem;
+    height: 1.5rem;
+    right: 0.5rem;
+  }
+  .img_container {
+    position: relative;
+    background-position-y: 0rem;
+    background-size: 112%;
+  }
+  .img_gout {
+    background-image: url(/images/restaurants/gout.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+  }
+  .img_française {
+    background-image: url(/images/restaurants/française.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+  }
+  .img_delice {
+    background-image: url(/images/restaurants/delice.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+  }
+  .ellipsis {
+    position: absolute;
+    text-overflow: unset;
+    overflow: unset;
+    top: 0.5rem;
+    left: 1rem;
+  }
+  .fs_footer_icon {
+    margin: unset;
+    padding-left: 1rem;
+  }
+  .white {
+    margin: unset;
+  }
+  .card_container {
+    position: relative;
+  }
+  .container_card {
+    margin: unset !important;
+    margin: none;
+  }
+  .logo_container {
+    margin: none !important;
+    margin: unset !important;
+    max-width: unset !important;
+  }
+  .footer_container {
+    width: 100%;
+    margin: unset !important;
+  }
 }
+/*# sourceMappingURL=design_desktop.css.map */

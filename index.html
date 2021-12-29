@@ -1,10 +1,12 @@
+<!DOCTYPE <html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="sass/main.css">
     <link rel="stylesheet" href="css/design_desktop.css">
+    <link rel="stylesheet" href="sass/design_tablet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,9 +17,11 @@
 </head>
 <body>
 
+    <div class="logo_container">
     <div class="logo"><img src="/images/logo/ohmyfood@2x.svg" alt="logo"></div>
-    <div class="flex">
-    <div class="location flex"><span class="fs_smallbold"><i class="fas fa-map-marker-alt"></i>Paris,Belleville</span></div>
+    </div>
+    <div class="flex reservation_container">
+    <div class="location flex"><span class="fs_smallbold brd_bottom"><i class="fas fa-map-marker-alt"></i>Paris,Belleville</span></div>
     <div class="reservation flex">
         <span class="fs_largebold">Reservez le menu qui <br><span class="fs_largebold mrg_2">vous convient</span></span>  
         <span>Decouvrez des restaurants d'exception,<br><span class="mrg_2">sélectionner par nos soins</span></span>    
@@ -44,17 +48,20 @@
  </div>
 </div>
 
+<div class="container_card">
 <div class="card_container flex">
-<span class="fs_largebold">Restaurant</span>
-<div class="card">
-<div class="img_container img_gout">
+<span class="fs_largebold absolute">Restaurant</span>
+<a href="/menu.html"><div class="card">
+<div class="img_container img_gout flex">
 <div class="new flex">
 <span class="fs_smallbold fs_bold">Nouveau</span></div>
 </div>
 <span class="fs_normal mrg_card_left">La palette du goût</span><br>
 <span class="fs_reset mrg_card_top mrg_card_left">Ménilmontant</span>
 <i class="far fa-heart"></i>
-</div>
+</div></a>
+
+<a href="/menu1.html">
 <div class="card">
 <div class="img_container img_note flex">
 <div class="new flex">
@@ -64,33 +71,39 @@
 <span class="fs_normal mrg_card_left">La note enchantée</span><br>
 <span class="fs_reset mrg_card_top mrg_card_left">Charonne</span>
 <i class="far fa-heart"></i>
-</div>
+</div></a>
+
+<a href="/menu2.html">
 <div class="card"><div class="img_container img_française">
-<div class="new flex">
-<span class="fs_smallbold fs_bold">Nouveau</span>
+    <div class="new flex hidden">
+        <span class="fs_smallbold fs_bold">Nouveau</span>
 </div>
 </div>
 <span class="fs_normal mrg_card_left">A la française</span><br>
 <span class="fs_reset mrg_card_top mrg_card_left">Cité rouge</span>
 <i class="far fa-heart"></i>
-</div>
+</div></a>
+<a href="/menu3.html">
 <div class="card"><div class="img_container img_delice">
- <div class="new flex">
-<span class="fs_smallbold fs_bold">Nouveau</span>
+    <div class="new flex hidden">
+        <span class="fs_smallbold fs_bold">Nouveau</span>
 </div>
 </div>
 <span class="fs_normal mrg_card_left">Le délice du sens</span><br>
 <span class="fs_reset mrg_card_top mrg_card_left">Folie-Méricourt</span>
 <i class="far fa-heart"></i>
+</div></a>
 </div>
 </div>
 
-<div class="footer flex">
-<span class="fs_normal white ffm">Oh my food</span>
+<div class="footer_container">
+<footer class="footer flex">
+<span class="fs_normal white ffm ellipsis">Oh my food</span>
 <div class="footer_items flex"><i class="fas fa-utensils white fs_footer_icon"></i><span class="fs_smallbold white">Proposer un restaurant</span></div>
 <div class="footer_items flex"><i class="fas fa-hands-helping white fs_footer_icon"></i><span class="fs_smallbold white mrg_left_footer">Devenir partenaire</span></div>
 <div class="footer_items"><span class="fs_smallbold white">Mentions legales</span></div>
 <div class="footer_items"><span class="fs_smallbold white">Contact</span></div>
+</footer>
 </div>
 </body>
 </html>

@@ -4,8 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="sass/main.css">
     <link rel="stylesheet" href="css/design_desktop.css">
+    <link rel="stylesheet" href="sass/design_tablet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,21 +20,23 @@
 <div class="img_menu"><img src="/images/restaurants/note.jpg" alt="logo" class="img_menu mrg_img_menu"></div>
  <div class="card_container flex menu mrg_img_menu1">
  <span class="ffm fs_largebold">La note enchantée</span>
- <svg aria-hidden="true"
- focusable="false"
- data-prefix="fas"
- data-icon="heart"
- class="svg-inline--fa fa-heart fa-w-16"
- role="img"
- xmlns="http://www.w3.org/2000/svg"
- viewbox="0 0 512 512">
- <path fill="currentColor"
- d="M462.3 62.6C407.5 15.9 326 24.3
- 275.7 76.2L256 96.5l-19.7-20.3C186.1
- 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1
- 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8
- 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
- </path></svg>
+ <svg id='heart' height="0" width="0">
+    <defs>
+      <clipPath id="svgPath">
+        <path
+          d="M20,35.09,4.55,19.64a8.5,8.5,0,0,1-.13-12l.13-.13a8.72,8.72,0,0,1,12.14,0L20,10.79l3.3-3.3a8.09,8.09,0,0,1,5.83-2.58,8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.13,12l-.13.13Z" />
+      </clipPath>
+    </defs>
+  </svg>
+  
+  <div class="container">
+    <svg width="40" height="40" viewBox="0 0 40 40" class='stroke'>
+      <path
+        d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z" />
+    </svg>
+  
+    <a href='#' class='clip'></a>
+  </div>
  <div class="menu_container flex">
 <span class="brd_bottom">ENTREES</span>
  <div class="menu_card">

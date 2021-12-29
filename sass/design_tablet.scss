@@ -1,0 +1,102 @@
+@media screen and (min-width: 600px){
+
+
+.card_container {
+        align-items: center;
+    }
+
+
+.menu_card {
+ width: 70% !important;
+}
+.menu_card1 {
+ width: 70% !important;
+}
+.menu_card2 {
+ width: 70% !important;
+}
+.menu_card3 {
+ width: 70% !important;
+}
+
+.menu_container {
+    align-items: center;
+}
+
+.footer {
+
+    width: 95%;
+    flex-direction: row;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+
+
+    .card_container {
+            align-items: center;
+        }
+    
+    
+    .menu_card {
+     width: 60%;
+    }
+    .menu_card1 {
+     width: 60%;
+    }
+    .menu_card2 {
+     width: 60%;
+    }
+    .menu_card3 {
+     width: 60%;
+    }
+    
+    .menu_container {
+        align-items: center;
+    }
+    
+    .footer {
+    
+        width: 95%;
+        flex-direction: row !important;
+    }
+
+    .reservation {
+
+        width: 87%;
+    }
+
+    .fonctionnement {
+      
+        align-items: center !important;
+       
+        & .flex {
+           width: 60% !important;
+        
+          }
+            
+        }
+
+  .card {
+
+    width: 100% !important;
+    height: 38vw !important;
+   
+  }
+
+ a {
+
+    width: 70%;
+ }
+
+ .fs_normal {
+
+    padding-bottom: 0.3rem;
+ }
+
+ .new {
+
+  left: -2%; 
+  width: 18%;
+ }
+    }
