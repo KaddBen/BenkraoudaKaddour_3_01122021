@@ -6,10 +6,6 @@
     margin: 0;
     }
 
-    *:not(.footer_container) {
-        max-width: 1280px;
-        margin: auto;
-            }
 
     .footer {
         position: relative;
@@ -20,17 +16,88 @@
         padding: 6% 0%;
         gap: 2%;
         flex-direction: row !important;
+        max-width: 1280px;
+        margin: auto;
     }
     .menu_card {
         background-color: white;
-        width: 30%;
-        height: 4rem;
+        width: 20rem !important;
+        height: 4.5rem;
+        border-radius: 20px;
+
+    }
+
+    .menu_card1{
+        background-color: white;
+        width: 20rem !important;
+        height: 4.5rem;
         border-radius: 20px;  
-    
+    }
+
+    .menu_card2 {
+        background-color: white;
+        width: 20rem !important;
+        height: 4.5rem;
+        border-radius: 20px;  
+    }
+
+    .menu_card3{
+        background-color: white;
+        width: 20rem !important;
+        height: 4.5rem;
+        border-radius: 20px;  
+    }
+
+    .menu_container1 {
+
+        grid-column-start: 1;
+        grid-row-start: 1 ;
+        
+    }
+    .menu_container2 {
+
+        grid-column-start: 2;
+        grid-row-start: 1 ;
+        
+    }
+    .menu_container3 {
+
+        grid-column-start: 1;
+        grid-row-start: 2 ;
+
+    &_span {
+
+        grid-column-end: span 2;
+    }
+        
+    }
+    .menu_container4 {
+
+        grid-column-start: 2;
+        grid-row-start: 2 ;
+        
+    }
+
+    .btn_container {
+
+        grid-column-end: span 2;
+        margin-top: unset;
+    }
+
+    .absolute_title {
+position: absolute;
+top: 5rem !important;
+left: 40% !important;
     }
     .flex {
-align-items: flex-start;
-        flex-direction: row;
+        align-items: flex-start;
+                flex-direction: row;
+            }
+
+    .center {
+        align-items: center !important;
+        flex-direction: column !important;
+        
     }
     .reservation {
         width: 40%;
@@ -42,6 +109,17 @@ margin-top: 13.5rem;
         margin: unset;
         padding-top: 3.5rem;
         
+    }
+
+    .reservation_container {
+
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    .button {
+
+margin-top: 7rem;
     }
 
     .location {
@@ -56,24 +134,37 @@ position: relative;
     .fas.fa-map-marker-alt {
 
         position: absolute;
-        left: 10%;
+        left: -10%;
     }
 
-    .brd_bottom {
+    .brd_bottom1 {
 
         border-bottom: 0.2rem solid $dark-grey;
-        width: 50%;
+        width: 6.5rem;
+        position: absolute;
+        top: 4rem !important;
+        left: 4rem;
+       
     }
     .absolute {
    position: absolute;
-   top: 8rem;
+   top: 2rem;
 
+    }
+
+    .ohmyfood_container {
+width: 100%;
+height: fit-content;
+        text-align: center !important;
+        position: absolute;
+        top: 1rem;
     }
 
     .card {
         height: 15rem !important;
     }
 .new {
+    align-items: center;
 width: 5.5rem;
 height: 1.5rem;
    right: 0.5rem; 
@@ -86,7 +177,10 @@ height: 1.5rem;
         background-size: 112% ;
 
     }
+    .fas.fa-arrow-left {
 
+        visibility: hidden;
+    }
     .img_gout {
         background-image: url(/images/restaurants/gout.jpg);
         @include img_flex;
@@ -102,6 +196,19 @@ height: 1.5rem;
         background-image: url(/images/restaurants/delice.jpg);
         @include img_flex;
        }
+
+       .img_menu {
+height: 20rem !important;
+        max-width: 1280px !important;
+        margin: auto !important;
+       }
+
+       .img_menu_container {
+
+        width: 100% !important;
+        height: fit-content;
+        background-color: $black !important;
+      }
       .ellipsis {
 position: absolute;
         text-overflow: unset;
@@ -118,28 +225,68 @@ left: 1rem;
       .white {
           margin: unset;
       }
+.footer_items {
 
+    margin-left: 5rem !important;
+    white-space: nowrap;
+}
       .card_container {
 
-        position: relative;
+        
+        max-width: 1280px !important;
+        margin: auto !important;
+
+        &_menu {
+            padding: 10rem 2.5%;
+            max-width: 1100 !important;
+            width: 80%;
+          }
+
+        &_index {
+
+            height: 0rem !important;
+            max-height: 0rem;
+            padding: 12.5rem 2.5%;
+        }  
+       
+      }
+      .footer_container {
+
+        background-color: $dark-grey;
+        width: 100%;
+      }
+      .menu_border {
+    
+        border-radius: 2rem;
       }
 
-      .container_card {
+      .grid {
 
-margin: unset !important;
-margin: none;
+        display: grid !important;
+        grid-template-columns: 50% 50%!important;
+        grid-row: 50% 50% !important;
+        margin-top: 4rem !important;
+        margin-bottom: 4rem !important;
+        padding-bottom: 5rem !important;
       }
 
+     .logo {
+
+        background-color: $black;
+     }
+
+     .img_ohmyfood {
+
+        background-color: $white;
+     }
+      .fs_largelogo {
+
+        font-size: $fs_largelogo;
+        font-weight: $fw_largebold;
+        color: $white;
+
+      }
      
       
-      .logo_container {
-      margin: none !important;
-      margin: unset !important;
-      max-width: unset !important;
-      }
-      
-      .footer_container {
-      width: 100%;
-      margin: unset !important;
-      }
+     
 }

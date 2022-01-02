@@ -16,11 +16,15 @@
     <title>Document</title>
 </head>
 <body>
-<div class="logo"><a href="index.html"><i class="fas fa-arrow-left"></i></a><img src="/images/logo/ohmyfood@2x.svg" alt="logo"></div>
+      <div class="logo_container">
+<div class="logo"><a href="index.html"><i class="fas fa-arrow-left"></i></a><span class="ffm fs_largelogo fw_largebold">Ohmyfood</span></div>
+</div>
+<div class="img_menu_container">
 <div class="img_menu"><img src="/images/restaurants/française.jpg" alt="logo" class="img_menu"></div>
- <div class="card_container flex menu">
- <span class="ffm fs_largebold">A la française</span><i class="far fa-heart heart_menu"></i> 
- <div class ="menu_container flex">
+</div>
+ <div class="card_container flex menu center card_container_menu menu_border grid">
+ <span class="ffm fs_largebold absolute_title">A la française</span><i class="far fa-heart heart_menu"></i>
+ <div class ="menu_container flex center menu_container1">
 <span class="brd_bottom">ENTREES</span>
  <div class="menu_card">
     <div class="nom">
@@ -30,7 +34,7 @@
      <div class="visible"><span class="prixbold">35€</span></div>
      <div class="slidegreen"><i class="fas fa-check-circle"></i></div>
  </div>
- <div class="menu_card1">
+ <div class="menu_card1 ">
     <div class="nom">
         <span class="fs_normal">Velouté de légumes d'antan </span><br>
            <span class="pdg_top over fs_small">Carotte, panais, topinambour</span></div>    
@@ -45,7 +49,7 @@
         <div class="slidegreen"><i class="fas fa-check-circle"></i></div>
  </div>
 </div> 
-<div class ="menu_container flex">
+<div class ="menu_container flex center menu_container_2">
  <span class="brd_bottom">PLATS</span>
  <div class="menu_card">
     <div class="nom">
@@ -69,7 +73,7 @@
         <div class="slidegreen"><i class="fas fa-check-circle"></i></div>
  </div>
 </div>
-<div class ="menu_container flex">
+<div class ="menu_container flex center menu_container3 menu_container3_span">
  <span class="brd_bottom">DESSERTS</span>
  <div class="menu_card">
     <div class="nom">
@@ -96,12 +100,16 @@
  <div class="btn_container flex"><input type="button" value="Commander" class="button fs_smallbold btn_menu fs_smallbold"></div>
 </div>
 
-<div class="footer flex">
-    <span class="fs_normal white ffm">Oh my food</span>
-    <div class="footer_items flex"><i class="fas fa-utensils white fs_footer_icon"></i><span class="fs_smallbold white">Proposer un restaurant</span></div>
-    <div class="footer_items flex"><i class="fas fa-hands-helping white fs_footer_icon"></i><span class="fs_smallbold white mrg_left_footer">Devenir partenaire</span></div>
-    <div class="footer_items"><span class="fs_smallbold white">Mentions legales</span></div>
-    <div class="footer_items"><span class="fs_smallbold white">Contact</span></div>
+<div class="footer_container">
+   <footer class="footer flex">
+    <div class="ohmyfood_container">   
+   <span class="fs_normal white ffm ">Oh my food</span>
     </div>
+   <div class="footer_items flex"><i class="fas fa-utensils white fs_footer_icon"></i><span class="fs_smallbold white">Proposer un restaurant</span></div>
+   <div class="footer_items flex"><i class="fas fa-hands-helping white fs_footer_icon"></i><span class="fs_smallbold white mrg_left_footer">Devenir partenaire</span></div>
+   <div class="footer_items"><span class="fs_smallbold white">Mentions legales</span></div>
+   <div class="footer_items"><span class="fs_smallbold white">Contact</span></div>
+   </footer>
+   </div>
 </body>
 </html>

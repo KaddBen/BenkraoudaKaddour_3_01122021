@@ -4,6 +4,9 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .loading_spinner {
+    left: 45vw;
+  }
   .menu_card {
     width: 70% !important;
   }

@@ -74,6 +74,11 @@ a {
   gap: 0.5rem;
 }
 
+.reservation_container {
+
+  animation: visible 3s ease-in forwards;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -94,6 +99,7 @@ a {
 }
 
 .fonctionnement {
+  animation: visible 3s ease-in forwards;
   width: 88% !important;
   height: fit-content !important;
   align-items: flex-start !important;
@@ -165,6 +171,7 @@ a {
   height: 67vw !important;
   border-radius: 1.3rem;
   background-color: $white;
+  box-shadow: 0px 0px 7px 3px $grey-box;
 }
 
 .card_container {
@@ -173,9 +180,11 @@ a {
   height: fit-content;
   gap: 1.5rem;
   align-items: flex-start;
-
+position: relative;
   padding: 20% 2.5%;
   background-color: $light-grey;
+
+  
 }
 
 .footer {
@@ -186,6 +195,12 @@ a {
   flex-direction: column !important;
   padding: 1.5rem 1.6rem 3rem 1.6rem;
   gap: 0.5rem;
+}
+
+.footer_container {
+
+  background-color: $dark-grey;
+  width: 100%;
 }
 
 @media all and (max-width: 1280px) {
@@ -266,6 +281,13 @@ a {
   border-style: none;
   color: $white;
   margin-top: 10vw;
+  box-shadow: 0px 6px 6px 2px $grey-box;
+
+  &:hover {
+
+    opacity: 80%;
+    box-shadow: 0px 8px 7px 3px $grey-box;
+  }
 }
 
 .fs_smallbold {
@@ -375,6 +397,7 @@ a {
 }
 
 .logo {
+  animation: visible 3s ease-in forwards;
   height: fit-content;
   text-align: center;
   padding: 4% 0%;
@@ -386,6 +409,13 @@ a {
   }
 }
 
+.fs_largelogo {
+
+  font-size: $fs_largelogo;
+  font-weight: $fw_largebold;
+  color: $black;
+
+}
 .new {
   position: absolute;
   width: 23%;
@@ -434,6 +464,7 @@ a {
   width: 100%;
   background-color: $black;
   z-index: -1;
+ 
 }
 
 .mrg_img_menu {
@@ -457,7 +488,10 @@ a {
   margin-top: -14%;
   z-index: 4;
   padding-bottom: 25%;
+
 }
+
+
 
 .btn_menu {
   align-items: center;
@@ -529,17 +563,25 @@ a {
 }
 
 .container_card {
+  animation: visible 3s ease-in forwards;
   width: 100% !important;
   height: fit-content;
   background-color: $light-grey;
 }
 
+.img_menu_container {
+
+  width: 100% !important;
+  height: fit-content;
+  background-color: black !important;
+}
 .logo_container {
   width: 100%;
   height: fit-content;
 }
 
 .footer_container {
+  animation: visible 3s ease-in forwards;
   width: 100%;
   height: fit-content;
   background-color: $dark-grey;
@@ -568,6 +610,92 @@ a {
   100% {
     transform: translateY(-30%);
     opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+   transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+   
+  }
+
+  99% {
+
+    opacity: 0;
+  }
+
+  
+  100% {
+  opacity: 1;
+  }
+}
+
+@keyframes visiblespinner {
+  0% {
+    visibility: visible;
+  }
+  99% {
+    visibility: visible;
+  }
+
+  100% {
+   visibility: hidden;
+  }
+
+}
+
+
+html {
+z-index: 100;
+  background-color: $white;
+  
+}
+
+.loading_spinner {
+  width: 4rem;
+  height: 4rem;
+  top: 50vh;
+  left: 40vw;
+  position: relative;
+ 
+  
+ 
+
+}
+
+.loader_quart {
+
+  border-radius: 4rem;
+  border: 0.5rem solid rgba(255,255,255,0.4);
+  animation: visiblespinner 3s ease-in forwards;
+ 
+ 
+  &::after {
+    content: "";
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    bottom: -0.5rem;
+    right: -0.5rem;
+    border: 0.5rem solid rgba($light-grey,0.4);
+    border-top-color: $black;
+    border-radius: 4rem;
+    animation: spin 1s linear infinite;
+   
+    
+   
   }
 }
 /*# sourceMappingURL=design.css.map */
