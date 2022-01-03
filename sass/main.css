@@ -1,4 +1,11 @@
 @charset "UTF-8";
+h1, h2, h3, h4 {
+  font-size: unset;
+  font-weight: unset;
+  margin: 0;
+  padding: 0;
+}
+
 .svg-inline--fa.fa-heart.fa-w-16 {
   background-color: #f2f2f2;
   width: 2rem;
@@ -85,7 +92,7 @@ a {
 }
 
 .reservation {
-  width: 74%;
+  width: 100%;
   background-color: #f2f2f2;
   padding: 3rem 3.1rem;
   gap: 0.5rem;
@@ -242,7 +249,7 @@ a {
 
 .footer {
   background-color: #3b3b3b;
-  width: 86.349%;
+  width: 86.349% !important;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -414,6 +421,39 @@ a {
   visibility: visible;
 }
 
+.menu_card_provence {
+  margin-top: 1rem;
+  background-color: white;
+  width: 100%;
+  height: 6rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 7px 3px #e0dfdf;
+          box-shadow: 0px 0px 7px 3px #e0dfdf;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu_card_provence:hover .slidegreen {
+  -webkit-animation: slidetest 0.5s forwards;
+          animation: slidetest 0.5s forwards;
+}
+
+.menu_card_provence:hover .fas.fa-check-circle {
+  -webkit-animation: rotation 0.5s forwards;
+          animation: rotation 0.5s forwards;
+  visibility: visible;
+}
+
 .menu_container {
   gap: 1.5rem;
   -webkit-box-align: start;
@@ -444,6 +484,10 @@ a {
 .fs_smallbold {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.fs_small {
+  font-size: 0.9rem;
 }
 
 .fs_normal {
@@ -774,7 +818,7 @@ a {
 }
 
 .logo_container {
-  width: 100%;
+  width: 100% !important;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -916,9 +960,11 @@ a {
   }
 }
 
-html {
+html, body {
   z-index: 100;
   background-color: white;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .loading_spinner {

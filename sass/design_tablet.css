@@ -1,8 +1,8 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
   .card_container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
   }
   .loading_spinner {
     left: 45vw;
@@ -26,10 +26,43 @@
   }
   .footer {
     width: 95%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    gap: 1rem !important;
+  }
+  .footer_items {
+    text-align: center;
+    margin-right: 1rem !important;
+  }
+  .card {
+    width: 33.5rem !important;
+    height: 20rem !important;
+    margin-left: 1rem !important;
+  }
+  .mrg_card_left {
+    padding-bottom: 0.5rem !important;
+  }
+  .new {
+    left: 10%;
+    width: 18%;
+  }
+  .fs_normal {
+    padding-bottom: 0rem;
+    margin-right: 1rem !important;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 800px) {
+  .card {
+    width: 33.5rem !important;
+    height: 20rem !important;
+    margin-left: 7rem !important;
+  }
+  .new {
+    left: -2%;
+    width: 18%;
   }
 }
 
@@ -62,6 +95,7 @@
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
             flex-direction: row !important;
+    gap: 1rem !important;
   }
   .reservation {
     width: 87%;
@@ -82,7 +116,8 @@
     width: 70%;
   }
   .fs_normal {
-    padding-bottom: 0.3rem;
+    padding-bottom: 0rem;
+    margin-right: 3rem !important;
   }
   .new {
     left: -2%;

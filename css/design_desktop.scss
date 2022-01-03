@@ -1,11 +1,11 @@
 @import "../sass/variables";
 @media screen and (min-width: 1024px){
 
-    .html,body {
-        padding: 0;
-    margin: 0;
+    html,body {
+        padding: 0  !important;
+    margin: 0 !important;
+    height: 100vh;
     }
-
 
     .footer {
         position: relative;
@@ -84,6 +84,11 @@
         margin-top: unset;
     }
 
+    .mrg_top_menu_container {
+
+        margin-top: 6rem !important;
+    }
+
     .absolute_title {
 position: absolute;
 top: 5rem !important;
@@ -130,7 +135,9 @@ justify-content: flex-start !important;
 margin: unset;
 position: relative;
     }
-
+.container_card {
+    height: fit-content;
+}
     .fas.fa-map-marker-alt {
 
         position: absolute;
@@ -232,7 +239,7 @@ left: 1rem;
 }
       .card_container {
 
-        
+         align-items: center !important;
         max-width: 1280px !important;
         margin: auto !important;
 
@@ -287,6 +294,11 @@ left: 1rem;
 
       }
      
-      
+      .card {
+
+        width: 100% !important;
+    
+        
+      }
      
 }

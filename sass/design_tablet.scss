@@ -1,9 +1,11 @@
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) and (max-width: 900px) {
 
 
 .card_container {
-        align-items: center;
+        align-items: center !important;
     }
+
+
 
 .loading_spinner {
 
@@ -27,10 +29,55 @@
 }
 
 .footer {
-
     width: 95%;
-    flex-direction: row;
+    flex-direction: row !important;
+    gap: 1rem !important;
+&_items {
+
+   text-align: center;
+   margin-right: 1rem !important;
 }
+}
+
+
+.card {
+
+    width: 33.5rem !important;
+    height: 20rem !important;
+    margin-left: 1rem !important;
+    
+    
+  }
+
+  .mrg_card_left {
+
+    padding-bottom: 0.5rem !important;
+  }
+  .new {
+
+    left: 10%; 
+    width: 18%;
+   }
+
+   .fs_normal {
+
+    padding-bottom: 0rem;
+    margin-right: 1rem !important;
+ }
+}
+@media screen and (min-width: 800px) and (max-width: 800px) {
+    .card {
+
+        width: 33.5rem !important;
+        height: 20rem !important;
+    margin-left: 7rem !important;
+    }
+
+    .new {
+
+        left: -2%; 
+        width: 18%;
+       }
 }
 
 @media screen and (min-width: 768px) and (max-width: 768px) {
@@ -62,6 +109,7 @@
     
         width: 95%;
         flex-direction: row !important;
+        gap: 1rem !important;
     }
 
     .reservation {
@@ -94,7 +142,8 @@
 
  .fs_normal {
 
-    padding-bottom: 0.3rem;
+    padding-bottom: 0rem;
+    margin-right: 3rem !important;
  }
 
  .new {
