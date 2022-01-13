@@ -41,14 +41,15 @@
 
 
 .card {
-
     width: 33.5rem !important;
     height: 20rem !important;
-    margin-left: 1rem !important;
-    
-    
+    margin-left: 1rem !important; 
   }
 
+  .fas.fa-arrow-left {
+top: 1.2rem;
+font-size: 2rem;
+  }
   .mrg_card_left {
 
     padding-bottom: 0.5rem !important;

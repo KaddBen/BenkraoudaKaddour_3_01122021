@@ -1,7 +1,9 @@
 @import "./variables";
 
-
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
   font-size: unset;
   font-weight: unset;
   margin: 0;
@@ -83,8 +85,8 @@ a {
 }
 
 .reservation_container {
-
   animation: visible 3s ease-in forwards;
+  gap: 12rem;
 }
 
 .flex {
@@ -96,24 +98,25 @@ a {
 }
 
 #heart-container {
-  min-height: 50px;
+  min-height: 30px;
   position: relative;
   > svg {
     position: absolute;
   }
   .filledsvg {
-    bottom: 50px;
+    bottom: 30px;
   }
 }
 
 .fonctionnement {
+  margin: auto;
   animation: visible 3s ease-in forwards;
   width: 88% !important;
   height: fit-content !important;
   align-items: flex-start !important;
   padding: 6%;
   gap: 3vw;
-
+ max-width: 1280px;
   & .flex {
     justify-content: flex-start;
     align-items: center;
@@ -132,8 +135,8 @@ a {
 
 .container {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   left: 19rem;
   bottom: 6.3rem;
 }
@@ -145,6 +148,7 @@ a {
   position: relative;
   overflow: hidden;
   clip-path: url(#svgPath);
+  
 
   &:hover {
     &::before {
@@ -167,13 +171,17 @@ a {
 }
 
 .stroke {
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 0;
   left: 0;
   fill: $black;
+
+
+ 
 }
+
 .card {
   width: 100% !important;
   height: 67vw !important;
@@ -188,11 +196,9 @@ a {
   height: fit-content;
   gap: 1.5rem;
   align-items: flex-start;
-position: relative;
+  position: relative;
   padding: 20% 2.5%;
   background-color: $light-grey;
-
-  
 }
 
 .footer {
@@ -206,7 +212,6 @@ position: relative;
 }
 
 .footer_container {
-
   background-color: $dark-grey;
   width: 100%;
 }
@@ -219,7 +224,7 @@ position: relative;
 
 @media all and (min-width: 1280px) {
   .footer {
-   max-width: 1280px;
+    max-width: 1280px;
   }
 }
 .menu_card {
@@ -233,7 +238,6 @@ position: relative;
   &:hover .fas.fa-check-circle {
     animation: rotation 0.5s forwards;
     visibility: visible;
-
   }
 
   &1 {
@@ -277,7 +281,6 @@ position: relative;
   }
 
   &_provence {
-
     margin-top: 1rem;
     background-color: $white;
     width: 100%;
@@ -286,19 +289,18 @@ position: relative;
     box-shadow: 0px 0px 7px 3px $grey-box;
     flex-wrap: nowrap;
     display: flex;
-    flex-direction: row ;
-    justify-content: space-between; 
-    
+    flex-direction: row;
+    justify-content: space-between;
+
     &:hover .slidegreen {
       animation: slidetest 0.5s forwards;
     }
-  
+
     &:hover .fas.fa-check-circle {
       animation: rotation 0.5s forwards;
       visibility: visible;
-  
     }
-  }  
+  }
 }
 
 .menu_container {
@@ -317,7 +319,6 @@ position: relative;
   box-shadow: 0px 6px 6px 2px $grey-box;
 
   &:hover {
-
     opacity: 80%;
     box-shadow: 0px 8px 7px 3px $grey-box;
   }
@@ -341,6 +342,11 @@ position: relative;
 .fs_largebold {
   font-size: $fs_largebold;
   font-weight: $fw_largebold;
+}
+
+.fs_center {
+
+  text-align: center;
 }
 
 .fs_reset {
@@ -446,11 +452,9 @@ position: relative;
 }
 
 .fs_largelogo {
-
   font-size: $fs_largelogo;
   font-weight: $fw_largebold;
   color: $black;
-
 }
 .new {
   position: absolute;
@@ -498,9 +502,9 @@ position: relative;
 .img_menu {
   overflow: hidden;
   width: 100%;
-  background-color: $black;
-  z-index: -1;
- 
+background-size: 100%;
+background-position-y: 15% ;
+background-repeat: no-repeat;
 }
 
 .mrg_img_menu {
@@ -513,7 +517,7 @@ position: relative;
 .fas.fa-arrow-left {
   position: absolute;
   font-size: 1.5rem;
-  margin-left: -20%;
+  left: 1rem;
   margin-top: 2%;
   color: $black;
 }
@@ -524,10 +528,7 @@ position: relative;
   margin-top: -14%;
   z-index: 4;
   padding-bottom: 25%;
-
 }
-
-
 
 .btn_menu {
   align-items: center;
@@ -606,7 +607,6 @@ position: relative;
 }
 
 .img_menu_container {
-
   width: 100% !important;
   height: fit-content;
   background-color: black !important;
@@ -651,7 +651,7 @@ position: relative;
 
 @keyframes spin {
   0% {
-   transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
@@ -662,17 +662,14 @@ position: relative;
 @keyframes visible {
   0% {
     opacity: 0;
-   
   }
 
   99% {
-
     opacity: 0;
   }
 
-  
   100% {
-  opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -685,19 +682,16 @@ position: relative;
   }
 
   100% {
-   visibility: hidden;
+    visibility: hidden;
   }
-
 }
 
-
-html,body {
-z-index: 100;
+html,
+body {
+  z-index: 100;
   background-color: $white;
   margin: 0 !important;
   padding: 0 !important;
-  
-  
 }
 
 .loading_spinner {
@@ -706,19 +700,13 @@ z-index: 100;
   top: 50vh;
   left: 40vw;
   position: relative;
- 
-  
- 
-
 }
 
 .loader_quart {
-
-  border-radius: 4rem;
-  border: 0.5rem solid rgba(255,255,255,0.4);
+  border-radius: 50%;
+  border: 0.5rem solid rgba(255, 255, 255, 0.4);
   animation: visiblespinner 3s ease-in forwards;
- 
- 
+
   &::after {
     content: "";
     width: 4rem;
@@ -728,13 +716,11 @@ z-index: 100;
     left: -0.5rem;
     bottom: -0.5rem;
     right: -0.5rem;
-    border: 0.5rem solid rgba($light-grey,0.4);
+    border: 0.5rem solid rgba($light-grey, 0.4);
     border-top-color: $black;
     border-radius: 4rem;
     animation: spin 1s linear infinite;
-   
-    
-   
   }
+
 }
 /*# sourceMappingURL=design.css.map */

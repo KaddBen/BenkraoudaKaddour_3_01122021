@@ -1,5 +1,8 @@
 @charset "UTF-8";
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-size: unset;
   font-weight: unset;
   margin: 0;
@@ -101,6 +104,7 @@ a {
 .reservation_container {
   -webkit-animation: visible 3s ease-in forwards;
           animation: visible 3s ease-in forwards;
+  gap: 12rem;
 }
 
 .flex {
@@ -122,7 +126,7 @@ a {
 }
 
 #heart-container {
-  min-height: 50px;
+  min-height: 30px;
   position: relative;
 }
 
@@ -131,10 +135,11 @@ a {
 }
 
 #heart-container .filledsvg {
-  bottom: 50px;
+  bottom: 30px;
 }
 
 .fonctionnement {
+  margin: auto;
   -webkit-animation: visible 3s ease-in forwards;
           animation: visible 3s ease-in forwards;
   width: 88% !important;
@@ -146,6 +151,7 @@ a {
           align-items: flex-start !important;
   padding: 6%;
   gap: 3vw;
+  max-width: 1280px;
 }
 
 .fonctionnement .flex {
@@ -172,8 +178,8 @@ a {
 
 .container {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   left: 19rem;
   bottom: 6.3rem;
 }
@@ -214,8 +220,8 @@ a {
 }
 
 .stroke {
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 0;
   left: 0;
@@ -504,6 +510,10 @@ a {
   font-weight: 700;
 }
 
+.fs_center {
+  text-align: center;
+}
+
 .fs_reset {
   font-size: 1rem;
   font-weight: 100;
@@ -674,8 +684,9 @@ a {
 .img_menu {
   overflow: hidden;
   width: 100%;
-  background-color: black;
-  z-index: -1;
+  background-size: 100%;
+  background-position-y: 15%;
+  background-repeat: no-repeat;
 }
 
 .mrg_img_menu {
@@ -689,7 +700,7 @@ a {
 .fas.fa-arrow-left {
   position: absolute;
   font-size: 1.5rem;
-  margin-left: -20%;
+  left: 1rem;
   margin-top: 2%;
   color: black;
 }
@@ -960,7 +971,8 @@ a {
   }
 }
 
-html, body {
+html,
+body {
   z-index: 100;
   background-color: white;
   margin: 0 !important;
@@ -976,7 +988,7 @@ html, body {
 }
 
 .loader_quart {
-  border-radius: 4rem;
+  border-radius: 50%;
   border: 0.5rem solid rgba(255, 255, 255, 0.4);
   -webkit-animation: visiblespinner 3s ease-in forwards;
           animation: visiblespinner 3s ease-in forwards;

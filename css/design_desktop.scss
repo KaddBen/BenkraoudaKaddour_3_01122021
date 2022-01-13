@@ -1,304 +1,264 @@
 @import "../sass/variables";
-@media screen and (min-width: 1024px){
-
-    html,body {
-        padding: 0  !important;
+@media screen and (min-width: 1024px) {
+  html,
+  body {
+    padding: 0 !important;
     margin: 0 !important;
     height: 100vh;
-    }
+  }
 
-    .footer {
-        position: relative;
-        background-color: $dark-grey;
-        width: 100% !important;
-        height: fit-content;
-        align-items: flex-start;
-        padding: 6% 0%;
-        gap: 2%;
-        flex-direction: row !important;
-        max-width: 1280px;
-        margin: auto;
-    }
-    .menu_card {
-        background-color: white;
-        width: 20rem !important;
-        height: 4.5rem;
-        border-radius: 20px;
+  .footer {
+    position: relative;
+    background-color: $dark-grey;
+    width: 100% !important;
+    height: fit-content;
+    align-items: flex-start;
+    padding: 6% 0%;
+    gap: 2%;
+    flex-direction: row !important;
+    max-width: 1280px;
+    margin: auto;
+  }
+  .menu_card {
+    background-color: white;
+    width: 20rem !important;
+    height: 4.5rem;
+    border-radius: 20px;
+  }
 
-    }
+  .menu_card1 {
+    background-color: white;
+    width: 20rem !important;
+    height: 4.5rem;
+    border-radius: 20px;
+  }
 
-    .menu_card1{
-        background-color: white;
-        width: 20rem !important;
-        height: 4.5rem;
-        border-radius: 20px;  
-    }
+  .menu_card2 {
+    background-color: white;
+    width: 20rem !important;
+    height: 4.5rem;
+    border-radius: 20px;
+  }
 
-    .menu_card2 {
-        background-color: white;
-        width: 20rem !important;
-        height: 4.5rem;
-        border-radius: 20px;  
-    }
+  .menu_card3 {
+    background-color: white;
+    width: 20rem !important;
+    height: 4.5rem;
+    border-radius: 20px;
+  }
 
-    .menu_card3{
-        background-color: white;
-        width: 20rem !important;
-        height: 4.5rem;
-        border-radius: 20px;  
-    }
-
-    .menu_container1 {
-
-        grid-column-start: 1;
-        grid-row-start: 1 ;
-        
-    }
-    .menu_container2 {
-
-        grid-column-start: 2;
-        grid-row-start: 1 ;
-        
-    }
-    .menu_container3 {
-
-        grid-column-start: 1;
-        grid-row-start: 2 ;
+  .menu_container1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  .menu_container2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  .menu_container3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
 
     &_span {
-
-        grid-column-end: span 2;
+      grid-column-end: span 2;
     }
-        
-    }
-    .menu_container4 {
+  }
+  .menu_container4 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
 
-        grid-column-start: 2;
-        grid-row-start: 2 ;
-        
-    }
+  .btn_container {
+    grid-column-end: span 2;
+    margin-top: unset;
+  }
 
-    .btn_container {
+  .mrg_top_menu_container {
+    margin-top: 6rem !important;
+  }
 
-        grid-column-end: span 2;
-        margin-top: unset;
-    }
+  .absolute_title {
+    position: absolute;
+    top: 5rem !important;
+    left: 40% !important;
+  }
+  .flex {
+    align-items: flex-start;
+    flex-direction: row;
+  }
 
-    .mrg_top_menu_container {
+  .center {
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  .reservation {
+    width: 40%;
+    margin-top: 13.5rem;
+    flex-direction: column;
+    background-color: white;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    margin: unset;
+    padding-top: 3.5rem;
+  }
 
-        margin-top: 6rem !important;
-    }
+  .reservation_container {
+    max-width: 1280px;
+    margin: auto;
+  }
 
-    .absolute_title {
-position: absolute;
-top: 5rem !important;
-left: 40% !important;
-    }
-    .flex {
-        align-items: flex-start;
-                flex-direction: row;
-            }
+  .button {
+    margin-top: 7rem;
+  }
 
-    .center {
-        align-items: center !important;
-        flex-direction: column !important;
-        
-    }
-    .reservation {
-        width: 40%;
-margin-top: 13.5rem;
-        flex-direction: column;
-        background-color: white;
-        align-items: flex-start !important;
-        justify-content: flex-start !important;
-        margin: unset;
-        padding-top: 3.5rem;
-        
-    }
-
-    .reservation_container {
-
-        max-width: 1280px;
-        margin: auto;
-    }
-
-    .button {
-
-margin-top: 7rem;
-    }
-
-    .location {
-      width: 20%;
-        background-color: $white;
-align-items: flex-start !important;
-justify-content: flex-start !important;
-margin: unset;
-position: relative;
-    }
-.container_card {
+  .location {
+    width: 20%;
+    background-color: $white;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    margin: unset;
+    position: relative;
+  }
+  .container_card {
     height: fit-content;
-}
-    .fas.fa-map-marker-alt {
+  }
+  .fas.fa-map-marker-alt {
+    position: absolute;
+    left: -10%;
+  }
 
-        position: absolute;
-        left: -10%;
-    }
+  .brd_bottom1 {
+    border-bottom: 0.2rem solid $dark-grey;
+    width: 6.5rem;
+    position: absolute;
+    top: 4rem !important;
+    left: 4rem;
+  }
+  .absolute {
+    position: absolute;
+    top: 2rem;
+  }
 
-    .brd_bottom1 {
+  .ohmyfood_container {
+    width: 100%;
+    height: fit-content;
+    text-align: center !important;
+    position: absolute;
+    top: 1rem;
+  }
 
-        border-bottom: 0.2rem solid $dark-grey;
-        width: 6.5rem;
-        position: absolute;
-        top: 4rem !important;
-        left: 4rem;
-       
-    }
-    .absolute {
-   position: absolute;
-   top: 2rem;
-
-    }
-
-    .ohmyfood_container {
-width: 100%;
-height: fit-content;
-        text-align: center !important;
-        position: absolute;
-        top: 1rem;
-    }
-
-    .card {
-        height: 15rem !important;
-    }
-.new {
+  .card {
+    height: 15rem !important;
+  }
+  .new {
     align-items: center;
-width: 5.5rem;
-height: 1.5rem;
-   right: 0.5rem; 
-}
+    width: 5.5rem;
+    height: 1.5rem;
+    right: 0.5rem;
+  }
 
+  .img_container {
+    position: relative;
+    background-position-y: 0rem;
+    background-size: 112%;
+  }
+  .fas.fa-arrow-left {
+    visibility: hidden;
+  }
+  .img_gout {
+    background-image: url(/images/restaurants/gout.jpg);
+    @include img_flex;
+  }
 
-    .img_container {
-        position: relative;
-        background-position-y: 0rem;
-        background-size: 112% ;
+  .img_française {
+    background-image: url(/images/restaurants/française.jpg);
+    @include img_flex;
+  }
 
-    }
-    .fas.fa-arrow-left {
+  .img_delice {
+    background-image: url(/images/restaurants/delice.jpg);
+    @include img_flex;
+  }
 
-        visibility: hidden;
-    }
-    .img_gout {
-        background-image: url(/images/restaurants/gout.jpg);
-        @include img_flex;
-       }
-       
-       
-       .img_française {
-        background-image: url(/images/restaurants/française.jpg);
-        @include img_flex;
-       }
-       
-       .img_delice {
-        background-image: url(/images/restaurants/delice.jpg);
-        @include img_flex;
-       }
+  .img_menu {
+    height: 20rem !important;
+    max-width: 1280px !important;
+    margin: auto !important;
+  }
 
-       .img_menu {
-height: 20rem !important;
-        max-width: 1280px !important;
-        margin: auto !important;
-       }
+  .img_menu_container {
+    width: 100% !important;
+    height: fit-content;
+    background-color: $black !important;
+  }
+  .ellipsis {
+    position: absolute;
+    text-overflow: unset;
+    overflow: unset;
+    top: 0.5rem;
+    left: 1rem;
+  }
 
-       .img_menu_container {
+  .fs_footer_icon {
+    margin: unset;
+    padding-left: 1rem;
+  }
 
-        width: 100% !important;
-        height: fit-content;
-        background-color: $black !important;
-      }
-      .ellipsis {
-position: absolute;
-        text-overflow: unset;
-overflow: unset;
-top: 0.5rem;
-left: 1rem;
-      } 
-
-      .fs_footer_icon {
-        margin: unset;
-        padding-left: 1rem;
-      }
-
-      .white {
-          margin: unset;
-      }
-.footer_items {
-
+  .white {
+    margin: unset;
+  }
+  .footer_items {
     margin-left: 5rem !important;
     white-space: nowrap;
-}
-      .card_container {
+  }
+  .card_container {
+    align-items: center !important;
+    max-width: 1280px !important;
+    margin: auto !important;
 
-         align-items: center !important;
-        max-width: 1280px !important;
-        margin: auto !important;
+    &_menu {
+      padding: 10rem 2.5%;
+      max-width: 1100 !important;
+      width: 80%;
+    }
 
-        &_menu {
-            padding: 10rem 2.5%;
-            max-width: 1100 !important;
-            width: 80%;
-          }
+    &_index {
+      height: 0rem !important;
+      max-height: 0rem;
+      padding: 12.5rem 2.5%;
+    }
+  }
+  .footer_container {
+    background-color: $dark-grey;
+    width: 100%;
+  }
+  .menu_border {
+    border-radius: 2rem;
+  }
 
-        &_index {
+  .grid {
+    display: grid !important;
+    grid-template-columns: 50% 50% !important;
+    grid-row: 50% 50% !important;
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+    padding-bottom: 5rem !important;
+  }
 
-            height: 0rem !important;
-            max-height: 0rem;
-            padding: 12.5rem 2.5%;
-        }  
-       
-      }
-      .footer_container {
+  .logo {
+    background-color: $black;
+  }
 
-        background-color: $dark-grey;
-        width: 100%;
-      }
-      .menu_border {
-    
-        border-radius: 2rem;
-      }
+  .img_ohmyfood {
+    background-color: $white;
+  }
+  .fs_largelogo {
+    font-size: $fs_largelogo;
+    font-weight: $fw_largebold;
+    color: $white;
+  }
 
-      .grid {
-
-        display: grid !important;
-        grid-template-columns: 50% 50%!important;
-        grid-row: 50% 50% !important;
-        margin-top: 4rem !important;
-        margin-bottom: 4rem !important;
-        padding-bottom: 5rem !important;
-      }
-
-     .logo {
-
-        background-color: $black;
-     }
-
-     .img_ohmyfood {
-
-        background-color: $white;
-     }
-      .fs_largelogo {
-
-        font-size: $fs_largelogo;
-        font-weight: $fw_largebold;
-        color: $white;
-
-      }
-     
-      .card {
-
-        width: 100% !important;
-    
-        
-      }
-     
+  .card {
+    width: 100% !important;
+  }
 }
