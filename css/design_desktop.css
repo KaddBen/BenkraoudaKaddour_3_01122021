@@ -1,10 +1,29 @@
 @charset "UTF-8";
+@media screen and (min-width: 1024px) and (max-width: 1090px) {
+  .heart_menu {
+    position: absolute !important;
+    right: -17rem !important;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   html,
   body {
     padding: 0 !important;
     margin: 0 !important;
     height: 100vh;
+  }
+  .position_française {
+    background-position-y: -20rem !important;
+  }
+  .position_française {
+    background-position-y: -20rem !important;
+  }
+  .position_gout {
+    background-position-y: -15rem !important;
+  }
+  .position_delice {
+    background-position-y: -20rem !important;
   }
   .footer {
     position: relative;
@@ -30,6 +49,9 @@
     width: 20rem !important;
     height: 4.5rem;
     border-radius: 20px;
+  }
+  .menu_card_provence {
+    width: 20rem !important;
   }
   .menu_card1 {
     background-color: white;
@@ -116,14 +138,15 @@
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: white;
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
     margin: unset;
     padding-top: 3.5rem;
+    margin-left: 4rem;
   }
   .reservation_container {
     max-width: 1280px;
@@ -174,7 +197,21 @@
     top: 1rem;
   }
   .card {
+    position: relative;
     height: 15rem !important;
+  }
+  .heart {
+    position: absolute;
+    font-size: 1.8rem;
+    margin-left: 83%;
+    margin-top: 0%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .heart_menu {
+    position: absolute;
+    right: -19rem;
   }
   .new {
     -webkit-box-align: center;
@@ -247,7 +284,6 @@
             justify-content: none;
   }
   .img_menu {
-    height: 20rem !important;
     max-width: 1280px !important;
     margin: auto !important;
   }
@@ -277,6 +313,7 @@
     white-space: nowrap;
   }
   .card_container {
+    position: relative;
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
@@ -323,6 +360,9 @@
   }
   .card {
     width: 100% !important;
+  }
+  .loading_spinner {
+    left: 50vw !important;
   }
 }
 /*# sourceMappingURL=design_desktop.css.map */

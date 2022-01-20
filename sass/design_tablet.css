@@ -1,8 +1,20 @@
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .heart_menu {
+    top: 0.5rem;
+    right: -10rem;
+  }
   .card_container {
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
+  }
+  .fonctionnement {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .footer_mrg_top {
+    margin-top: 1.4rem !important;
   }
   .loading_spinner {
     left: 45vw;
@@ -37,9 +49,13 @@
     margin-right: 1rem !important;
   }
   .card {
+    position: relative;
     width: 33.5rem !important;
     height: 20rem !important;
     margin-left: 1rem !important;
+  }
+  a {
+    width: 33.5rem !important;
   }
   .fas.fa-arrow-left {
     top: 1.2rem;
@@ -49,7 +65,7 @@
     padding-bottom: 0.5rem !important;
   }
   .new {
-    left: 10%;
+    right: 2rem;
     width: 18%;
   }
   .fs_normal {
