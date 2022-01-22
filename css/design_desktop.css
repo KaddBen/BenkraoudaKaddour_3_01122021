@@ -1,5 +1,12 @@
 @charset "UTF-8";
-@media screen and (min-width: 1024px) and (max-width: 1090px) {
+@media screen and (min-width: 1024px) and (max-width: 1130px) {
+  .heart_menu {
+    position: absolute !important;
+    right: -13rem !important;
+  }
+}
+
+@media screen and (min-width: 1131px) and (max-width: 1220px) {
   .heart_menu {
     position: absolute !important;
     right: -17rem !important;
