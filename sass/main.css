@@ -251,7 +251,7 @@ a {
       -ms-flex-align: start;
           align-items: flex-start;
   position: relative;
-  padding: 20% 2.5%;
+  padding: 3rem 2.5%;
   background-color: #f2f2f2;
 }
 
