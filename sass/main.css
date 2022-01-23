@@ -453,6 +453,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 492px;
 }
 
 .menu_card_provence:hover .slidegreen {
@@ -563,7 +564,7 @@ a {
   position: absolute;
   color: black;
   font-size: 1.1rem;
-  margin-left: -8%;
+  margin-left: -18%;
   margin-top: -0.2%;
 }
 
@@ -629,8 +630,12 @@ svg {
 .heart_menu {
   position: absolute;
   display: inline-block;
-  right: -7rem;
+  right: -4rem !important;
   top: 0;
+}
+
+.mrg_heart_menu {
+  right: -7rem !important;
 }
 
 h2 {
